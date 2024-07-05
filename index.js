@@ -9,12 +9,11 @@ var totalbl = 0, totalrun = 0, totalw = 0, teamarun = 0, teambrun = 0, tasco, tb
 
 ynam = prompt("Hi!!👋 I'm TAMAL. \n Good to see you !!\n What is your name BUDDY ??")
 oq = prompt ("Hey "+ ynam + " !! Let's play \n Enter overs quantity 👇👇");
-// oq = parseFloat(oq);
+oq = (parseFloat(oq))*6;
 alert("HIT the BALL to PLAY !!");
 
 ball.onclick = function (){
-    oq = (parseFloat(oq))*6;
-    console.log(oq);
+    // console.log(oq);
     totalbl += 1;
     var val = rn ();
    
@@ -91,10 +90,10 @@ ball.onclick = function (){
         }
     }
 
-console.log ("val :- " + val);
-console.log ("totalrun :- " + totalrun);
-console.log ("totalbl  :- " + totalbl);
-console.log ("totalw :- " + totalw);
+// console.log ("val :- " + val);
+// console.log ("totalrun :- " + totalrun);
+// console.log ("totalbl  :- " + totalbl);
+// console.log ("totalw :- " + totalw);
 }
 
 
