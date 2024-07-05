@@ -5,7 +5,7 @@ let teambbat = document.getElementById("teambbat");
 let teambbal = document.getElementById("teambbal");
 let result = document.getElementById("result");
 let ingbox = document.getElementById("boxo");
-var totalbl = 0, totalrun = 0, totalw = 0, teamarun = 0, teambrun = 0, tasco, tbsco, oq,bq ynam,  fing = true, alertok = true, sing = false,  gameovr = false;
+var totalbl = 0, totalrun = 0, totalw = 0, teamarun = 0, teambrun = 0, tasco, tbsco, oq,bq, ynam,  fing = true, alertok = true, sing = false,  gameovr = false;
 
 ynam = prompt("Hi!!👋 I'm TAMAL. \n Good to see you !!\n What is your name BUDDY ??")
 oq = prompt ("Hey "+ ynam + " !! Let's play \n Enter overs quantity 👇👇");
