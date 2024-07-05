@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #9cc46c;
+    background-image: url('cheerleaders-cheering.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heading {
+    height: 50px;
+    width: 100%;
+    color: blue;
+    background-color: #D8EFD3;
+    font-size: large;
+    
+}
+
+#heading1 {
+    display: flex;
+    justify-content: center;
+    background-color: #95D2B3;
+}
+
+#heading2 {
+    display: flex;
+    justify-content: center;
+    background-color: #55AD9B;
+    margin-bottom: 20px;
+    
+}
+
+#teama, #teamb {
+    background: linear-gradient(to right, #c956ffce, #51fdfb);
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: x-large;
+    margin : 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+
+.box {
+    border: 0.5px solid black;
+}
+
+#boxb {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+    font-size: xxx-large;
+    font-weight: bold;
+    margin-left: 50%;
+    border-radius: 50%;
+}
+ 
+#result {
+    display: flex;
+    height: 80px;
+    width: 230px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 43%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #FFB4C2, #FDFFD2);
+    
+}
+
+#boxb {
+    background: linear-gradient(to right, #eeff56ce, #51fdfb);
+    cursor: pointer;
+     transition: transform 1s ease;
+}
+
+#boxb:active {
+    transform: rotate(1440deg);
+}
+
+#boxb:hover, #boxo:hover {
+    /* border: 0.5px dotted red; */
+    background-color: aqua;
+}
+
+
+
+#boxo {
+    margin-left: 45%;
+    display: none;
+}
