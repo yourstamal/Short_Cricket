@@ -5,11 +5,11 @@ let teambbat = document.getElementById("teambbat");
 let teambbal = document.getElementById("teambbal");
 let result = document.getElementById("result");
 let ingbox = document.getElementById("boxo");
-var totalbl = 0, totalrun = 0, totalw = 0, teamarun = 0, teambrun = 0, tasco, tbsco, oq, ynam,  fing = true, alertok = true, sing = false,  gameovr = false;
+var totalbl = 0, totalrun = 0, totalw = 0, teamarun = 0, teambrun = 0, tasco, tbsco, oq,bq ynam,  fing = true, alertok = true, sing = false,  gameovr = false;
 
 ynam = prompt("Hi!!👋 I'm TAMAL. \n Good to see you !!\n What is your name BUDDY ??")
 oq = prompt ("Hey "+ ynam + " !! Let's play \n Enter overs quantity 👇👇");
-oq = (parseFloat(oq))*6;
+bq = (parseFloat(oq))*6;
 alert("HIT the BALL to PLAY !!");
 
 ball.onclick = function (){
@@ -44,7 +44,7 @@ ball.onclick = function (){
             teambbal.innerHTML = ("Team B :- " + Math.floor(totalbl/6) + " . " + totalbl%6);
             tasco = teamabat.innerHTML + "( " + Math.floor(totalbl/6) + " . " + totalbl%6 + " )";
     
-            if (totalw === 10 || totalbl == oq ){
+            if (totalw === 10 || totalbl == bq ){
                 teamarun = totalrun;
                 alert("1st inning is over !! \n " + teamabat.innerText + "( " +  Math.floor(totalbl/6) + " . " + totalbl%6 +  ")\n Start 2nd innings.");
                 fing = false;
@@ -63,7 +63,7 @@ ball.onclick = function (){
             gameovr = (teambrun > teamarun) ? true : false;
             sing = (teambrun > teamarun) ? false : true;
     
-            if (totalw === 10 || totalbl == oq){
+            if (totalw === 10 || totalbl == bq){
                 gameovr = true;
                 sing = false;
                 alert("2nd innings is over !! \n" + teambbat.innerText +  "( " +  Math.floor(totalbl/6) + " . " + totalbl%6 +  ")" );
